@@ -1,6 +1,6 @@
 # Have to run `New-Item -ItemType File -Force -Path $PROFILE` to create the 'Microsoft.PowerShell_profile.ps1' file on this path: `C:\Users\<USERNAME>\OneDrive\Documents\PowerShell`
 # Once you do that, next time you have to run `$PROFILE` to check the path and go there
-# Finally, paste the below codes an the file
+# Finally, paste the code below in the file
 # If any changes are made, run `. $PROFILE` every time to reload the configuration
 
 #Oh-My-Posh customized theme

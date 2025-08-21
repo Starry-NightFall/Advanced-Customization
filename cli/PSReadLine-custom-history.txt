@@ -6,9 +6,10 @@ git push
 
 git rm -r --cached . #Remove the cached files from indexing
 
-git push --force #After deleteing any commit, you must do it before making any new commit
+git revert <commit-code> #Revert all the codes from the mentioned commit. Contributions does not reset, instead, just get the codes of that point
 git reset --soft HEAD~1 #Keep files but delete the last 1 (mentioned on HEAD~1) commit 
 git reset --hard HEAD~1 #Parmanently delete files of the last 1 (mentioned on HEAD~1) commit
+git push --force #After deleteing any commit, you must do it before making any new commit
 
 git branch #check your current branch
 git switch -c branch-name #-c or --create, creates a branch of defined name
