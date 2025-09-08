@@ -2,40 +2,64 @@
   "mcpServers": {
     "Sequential Thinking": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
-    },
-    "Browser Tools": {
-      "command": "npx",
-      "args": ["-y", "@agentdeskai/browser-tools-mcp@1.2.0"]
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
     },
     "Context7": {
-      "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "url": "https://mcp.context7.com/mcp"
     },
-    "Supabase": {
-      "command": "cmd",
-      "args": ["/c", "npx", "-y", "@supabase/mcp-server-supabase@latest", "--access-token", "sbp_0b5e82caf64605b4bc3ef9b43517bd575eed5d02"]
-    },
-    "Fetch": {
-      "command": "uvx",
-      "args": ["mcp-server-fetch"]
-    },
-    "Taskmaster": {
-      "command": "npx",
-      "args": ["-y", "--package=task-master-ai", "task-master-ai"],
-      "env": {
-        "ANTHROPIC_API_KEY": "YOUR_ANTHROPIC_API_KEY_HERE",
-        "PERPLEXITY_API_KEY": "YOUR_PERPLEXITY_API_KEY_HERE",
-        "OPENAI_API_KEY": "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",
-        "GOOGLE_API_KEY": "AIzaSyB02tHWTv91F0UQ_0M_OLFL9Av4Bcy_D6I",
-        "MISTRAL_API_KEY": "YOUR_MISTRAL_KEY_HERE",
-        "OPENROUTER_API_KEY": "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",
-        "XAI_API_KEY": "YOUR_XAI_KEY_HERE",
-        "AZURE_OPENAI_API_KEY": "YOUR_AZURE_KEY_HERE",
-        "OLLAMA_API_KEY": "YOUR_OLLAMA_API_KEY_HERE",
 
-        "_comment": "OPENROUTER_API_KEY api key should also be placed on the place of OPENAI_API_KEY"
+    "BrowserTools": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@agentdeskai/browser-tools-mcp"
+      ]
+    },
+    "SupabaseMCP": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@supabase/mcp-server-supabase@latest",
+        "--project-ref=guubxhaqyvtxgxpyuvuq"
+      ],
+      "env": {
+        "SUPABASE_ACCESS_TOKEN": "sbp_2f647370de821bcda5ab1285022760617c193f47"
       }
+    },
+    "Playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"]
+    },
+    "TaskMaster": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "--package=task-master-ai",
+        "task-master-ai"
+      ],
+      "env": {
+        "GOOGLE_API_KEY": "AIzaSyDVajfPeSzpwcjhN7DPwaKLgSq3jc2CCic",
+        "OPENROUTER_API_KEY": "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",
+        "ANTHROPIC_API_KEY": "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"
+      }
+    },
+    "n8nMCP": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "--init",
+        "-e", "MCP_MODE=stdio",
+        "-e", "LOG_LEVEL=error",
+        "-e", "DISABLE_CONSOLE_OUTPUT=true",
+        "-e", "N8N_API_URL=http://host.docker.internal:5678",
+        "-e", "N8N_API_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI0YWU0ZTA0Ny1jMTZkLTRhMWQtODNhMi1kNjE5NzM3YzI4MjkiLCJpc3MiOiJuOG4iLCJhdWQiOiJwdWJsaWMtYXBpIiwiaWF0IjoxNzU3MzU2MDQ3fQ.SCyjhm6RLqLrlpOMFnzb3nsgBp1wNWL11GZ7GIfdPQI",
+        "ghcr.io/czlonkowski/n8n-mcp:latest"
+      ]
     }
   }
 }
