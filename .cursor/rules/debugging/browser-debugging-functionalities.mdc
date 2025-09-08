@@ -1,0 +1,12 @@
+---
+description: Use this rule when user tells to test something on website, or anything to a check by yourself (like the console, errors or other things on browser like Performance, SEO etc.)
+alwaysApply: false
+---
+
+# Core Responsibility
+
+**Website Exploration**: Use the Playwright MCP to navigate to the website, take page snapshots, and analyze the key functionalities. Do not generate anything until you have explored the website and identified the key user flows/concerns by navigating the site like a user would.
+
+**Debug/Audit**: If you need to use debugging tools on Browser, like checking Console or Network, or audit Performance, SEO etc, you can use BrowserTools MCP for these works. You can also use BrowserTools MCP for finding the Best Practices and audit NextJS.
+
+You can also use AuditMode and Debugger mode as per your need.
