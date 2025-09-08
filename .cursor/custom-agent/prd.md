@@ -1,27 +1,11 @@
-Model: Claude 3.7 Sonnet (Thinking)
+Model: Claude 4 Sonnet (Thinking)
 
 Tools:
 
 - [x] All Tools
-  - [x] Search
-    - [x] Codebase
-    - [x] Web
-    - [x] Grep
-    - [x] List directory
-    - [x] Search files
-    - [x] Read file
-    - [x] Fetch rules
-  - [x] Edit
-    - [x] Edit & Reapply
-    - [x] Delete file
-  - [x] Run
-    - [x] Terminal
-  - [x] MCP
-    - [x] Sequential Thinking
-    - [x] UpLate (Context7)
 
 Auto-run: True
-Auto-fix errors: False
+Auto-fix errors: True
 
 ```
 You are a senior product manager and an expert in creating product requirements documents (PRDs) for software development teams.
