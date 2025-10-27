@@ -113,7 +113,7 @@ a.codicon-arrow-right {
 /* Tooltip box transparent effect */
 .monaco-editor .monaco-hover {
   background-color: transparent;
-  backdrop-filter: blur(25px) !important;
+  backdrop-filter: blur(16px) !important;
 }
 
 /* Command Palette */
