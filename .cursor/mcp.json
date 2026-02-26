@@ -7,31 +7,32 @@
         "@modelcontextprotocol/server-sequential-thinking"
       ]
     },
+    "Playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"]
+    },
+    "Supabase MCP": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@supabase/mcp-server-supabase@latest",
+        "--access-token",
+        "sbp_312d6e8f08fa4224f4457105c91c42fae7905d17",
+        "--project-ref=guubxhaqyvtxgxpyuvuq" // Optional
+      ],
+      "env": {}
+      // "disabledTools": ["rebase_branch", "reset_branch", "merge_branch", "delete_branch", "list_branches", "create_branch"]
+    },
+
     "Context7": {
       "url": "https://mcp.context7.com/mcp"
     },
-
     "BrowserTools": {
       "command": "npx",
       "args": [
         "-y",
         "@agentdeskai/browser-tools-mcp"
       ]
-    },
-    "SupabaseMCP": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@supabase/mcp-server-supabase@latest",
-        "--project-ref=guubxhaqyvtxgxpyuvuq"
-      ],
-      "env": {
-        "SUPABASE_ACCESS_TOKEN": "sbp_2f647370de821bcda5ab1285022760617c193f47"
-      }
-    },
-    "Playwright": {
-      "command": "npx",
-      "args": ["@playwright/mcp@latest"]
     },
     "TaskMaster": {
       "command": "npx",
