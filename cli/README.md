@@ -1,6 +1,7 @@
 ### **Tools are using**:
 
 **Helpful Video**:
+
 - https://www.youtube.com/watch?v=aghxkpyRVDY
 - https://www.youtube.com/watch?v=EJ6uvqhKR4M
 
@@ -14,8 +15,9 @@
 
 ### **Tools for One-Time setup**:
 
-| Tool     | Why Useful                                | Source                                           |
-| -------- | ----------------------------------------- | ------------------------------------------------ |
-| StarShip | Show Gylphs on TUI                        | [StarShip](https://github.com/starship/starship) |
-| Figlet   | Print ascii arts on terminal              | UNIX                                             |
-| lolcat   | Combine with other commands like `figlet` | [lolcat](https://github.com/busyloop/lolcat)     |
+| Tool     | Why Useful                                           | Source                                           |
+| -------- | ---------------------------------------------------- | ------------------------------------------------ |
+| StarShip | Show Gylphs on TUI                                   | [StarShip](https://github.com/starship/starship) |
+| Atuin    | Show console command history on arrow key navigation | [Atuin](https://github.com/atuinsh/atuin)        |
+| Figlet   | Print ascii arts on terminal                         | UNIX                                             |
+| lolcat   | Combine with other commands like `figlet`            | [lolcat](https://github.com/busyloop/lolcat)     |
