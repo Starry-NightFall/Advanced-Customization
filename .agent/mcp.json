@@ -1,15 +1,10 @@
 {
   "mcpServers": {
-    "Sequential Thinking": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-sequential-thinking"
-      ]
-    },
     "Playwright": {
       "command": "npx",
-      "args": ["@playwright/mcp@latest"]
+      "args": [
+        "@playwright/mcp@latest"
+      ]
     },
     "Supabase MCP": {
       "command": "npx",
@@ -23,29 +18,8 @@
       "env": {}
       // "disabledTools": ["rebase_branch", "reset_branch", "merge_branch", "delete_branch", "list_branches", "create_branch"]
     },
-
     "Context7": {
       "url": "https://mcp.context7.com/mcp"
-    },
-    "BrowserTools": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@agentdeskai/browser-tools-mcp"
-      ]
-    },
-    "TaskMaster": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "--package=task-master-ai",
-        "task-master-ai"
-      ],
-      "env": {
-        "GOOGLE_API_KEY": "AIzaSyDVajfPeSzpwcjhN7DPwaKLgSq3jc2CCic",
-        "OPENROUTER_API_KEY": "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",
-        "ANTHROPIC_API_KEY": "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"
-      }
     },
     "n8nMCP": {
       "command": "docker",
