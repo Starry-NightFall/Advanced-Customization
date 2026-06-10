@@ -1,0 +1,203 @@
+{
+  // IDE: Editor UI and Settings Customization
+  "workbench.editor.revealIfOpen": true,
+  // "workbench.activityBar.location": "top",
+  "workbench.list.smoothScrolling": true,
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.cursorBlinking": "expand",
+  "editor.cursorWidth": 2,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.guides.bracketPairs": true,
+  "editor.matchBrackets": "never",
+  "editor.accessibilitySupport": "off",
+  "editor.wordWrapColumn": 2000,
+  "editor.suggest.showStatusBar": true,
+  "editor.linkedEditing": true,
+  "editor.tabSize": 2,
+  "editor.fontFamily": "JetbrainsMono Nerd Font Mono, Dank Mono, Victor Mono, FiraCode Nerd Font Mono, Fantasque Sans Mono Regular, Comic Sans MS",
+  // IDE: Terminal
+  "terminal.integrated.cursorWidth": 2,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.env.windows": {},
+  "terminal.integrated.cursorStyleInactive": "underline",
+  "terminal.integrated.enableImages": true,
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono, JetBrains Mono",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.enableMultiLinePasteWarning": "auto",
+  "terminal.integrated.smoothScrolling": true,
+  "explorer.confirmDelete": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "files.autoSaveDelay": 800,
+  // IDE: Minimap
+  "editor.minimap.maxColumn": 80,
+  "editor.minimap.showMarkSectionHeaders": false,
+  "editor.minimap.enabled": false,
+  // IDE: ScreenCast Mode
+  "screencastMode.fontSize": 35,
+  "screencastMode.verticalOffset": 0,
+  "screencastMode.keyboardOverlayTimeout": 1000,
+  "screencastMode.mouseIndicatorSize": 30,
+  "screencastMode.keyboardOptions": {
+    "showCommandGroups": true
+  },
+  // IDE: Other Settings
+  "files.exclude": {
+    "**/.git": false
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  // Custom CSS from:   https://github.com/glennraya/vscode-settings-json
+  "vscode_custom_css.imports": [
+    "file:///E:/Tools/advanced-customizations/vs-code/vs-code-style.css",
+    "file:///c:/Users/siams/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
+  ],
+  "editor.stickyScroll.enabled": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.hover.hidingDelay": 200,
+  "explorer.compactFolders": false,
+  "git.enableSmartCommit": true,
+  "git.openRepositoryInParentFolders": "never",
+  "window.menuBarVisibility": "compact",
+  "editor.detectIndentation": false,
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.rmskin": "default",
+    "*.mdc": "default"
+  },
+  "settingsSync.ignoredSettings": [
+    "-window.zoomLevel"
+  ],
+  "extensions.autoUpdate": false,
+  "breadcrumbs.symbolPath": "off",
+  "chat.agent.maxRequests": 50,
+  "github.copilot.chat.codesearch.enabled": true,
+  // Extension: Error Lens
+  "errorLens.border": [
+    "1px solid",
+    "1px dotted",
+    "1px dashed",
+    "1px solid #00000040"
+  ],
+  "errorLens.gutterIconSize": "125%",
+  "errorLens.fontFamily": "Comic Sans MS",
+  "errorLens.fontSize": "-4px",
+  "errorLens.borderRadius": "0.3em",
+  "errorLens.padding": "0 6px",
+  "errorLens.messageBackgroundMode": "message",
+  "errorLens.gutterIconsEnabled": true,
+  "errorLens.excludeByMessage": [
+    // string match(includes), case-insensitive
+    "Empty block statement",
+    "Missing semicolon",
+    "has no corresponding closing tag",
+    "JSX element expected",
+    "is not defined",
+    "is defined but never used",
+    "is assigned a value but never used"
+  ],
+  "terminal.integrated.suggest.cdPath": "relative",
+  "editor.smoothScrolling": true,
+  "editor.fontSize": 20,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.secondarySideBar.showLabels": false,
+  "workbench.sideBar.location": "right",
+  "git.confirmSync": false,
+  "terminal.integrated.suggest.enabled": true,
+  "editor.formatOnSave": true,
+  "remote.portsAttributes": {
+    "5500": {
+      "protocol": "https"
+    }
+  },
+  "C_Cpp.default.cppStandard": "c++20",
+  "C_Cpp.default.cStandard": "c11",
+  "code-runner.runInTerminal": true,
+  "code-runner.saveAllFilesBeforeRun": true,
+  "code-runner.terminalRoot": "/",
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    // "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    // "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "zig": "zig run",
+    "php": "php",
+    "python": "python -u",
+    "perl": "perl",
+    "perl6": "perl6",
+    "ruby": "ruby",
+    "go": "go run",
+    "lua": "lua",
+    "groovy": "groovy",
+    "powershell": "powershell -ExecutionPolicy ByPass -File",
+    "bat": "cmd /c",
+    "shellscript": "bash",
+    "fsharp": "fsi",
+    "csharp": "scriptcs",
+    "vbscript": "cscript //Nologo",
+    "typescript": "ts-node",
+    "coffeescript": "coffee",
+    "scala": "scala",
+    "swift": "swift",
+    "julia": "julia",
+    "crystal": "crystal",
+    "ocaml": "ocaml",
+    "r": "Rscript",
+    "applescript": "osascript",
+    "clojure": "lein exec",
+    "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    "racket": "racket",
+    "scheme": "csi -script",
+    "ahk": "autohotkey",
+    "autoit": "autoit3",
+    "dart": "dart",
+    "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+    "haskell": "runghc",
+    "nim": "nim compile --verbosity:0 --hints:off --run",
+    "lisp": "sbcl --script",
+    "kit": "kitc --run",
+    "v": "v run",
+    "sass": "sass --style expanded",
+    "scss": "scss --style expanded",
+    "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+    "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "sml": "cd $dir && sml $fileName",
+    "mojo": "mojo run",
+    "erlang": "escript",
+    "spwn": "spwn build",
+    "pkl": "cd $dir && pkl eval -f yaml $fileName -o $fileNameWithoutExt.yaml",
+    "gleam": "gleam run -m $fileNameWithoutExt",
+    // WITHOUT TEXT FILE
+    // "c": "gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    // "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    // WITH TEXT FILE
+    "c": "gcc $fileName -o $fileNameWithoutExt.exe && timeout 15s $dir$fileNameWithoutExt.exe < input.txt > output.txt || (echo -n > output.txt && echo 'Time Limit Gone')",
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt.exe && timeout 15s $dir$fileNameWithoutExt.exe < input.txt > output.txt || (echo -n > output.txt && echo 'Time Limit Gone')"
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "search.showLineNumbers": true,
+  "editor.colorDecorators": false,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "files.autoSave": "afterDelay",
+  "terminal.integrated.fontLigatures.enabled": true,
+  "workbench.browser.enableChatTools": true,
+  "chat.tools.terminal.backgroundNotifications": true,
+  "workbench.colorTheme": "Atom Material Theme"
+}
