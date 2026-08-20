@@ -173,3 +173,19 @@ a.codicon-arrow-right {
   background-size: contain !important;
   width: 60% !important;
 } */
+
+
+/* Remove original error message and use `Pretty Typescript Errors` extension message only  */
+/* Allow copying */
+.codicon-none {
+  user-select: text !important;
+  -webkit-user-select: text !important;
+}
+/* Hide errors */
+div.monaco-hover-content:has(.codicon-none) > .hover-row:first-child {
+  display: none !important;
+}
+div.monaco-hover-content:has([style="color:#f96363;"])
+  > .hover-row:first-child {
+  display: none !important;
+}
