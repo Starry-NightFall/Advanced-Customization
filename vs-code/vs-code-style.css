@@ -1,72 +1,65 @@
 /* Regular Texts */
 /* Punctuations (dot, comma, semicolon) except strings ('') */
-/* .mtk1 {
-  color: #ffffff !important;
-  text-shadow: #ccccccbb 0 0 4px !important;
-} */
-
-.mtk6 {
-  color: #8cc8ff !important;
-  backdrop-filter: blur(5px);
-  text-shadow: 0 0 5px !important;
+.mtk1 {
+  text-shadow: 0 0 3px currentColor !important;
 }
 
-/* JS function (regular/arrow) and DOM and Method names */
-/* .mtk7 {
-  color: #7cc4ff !important;
-  text-shadow: #5595c9aa 0 0 4px !important;
+/* .mtk6 {
+  text-shadow: 0 0 5px currentColor !important;
+}
+
+.mtk7 {
+  text-shadow: 0 0 4px currentColor !important;
 }
 
 .mtk10 {
-  color: #00dcdc !important;
-  text-shadow: 0 0 5px !important;
-}
+  text-shadow: 0 0 5px currentColor !important;
+} */
 
-/* HTML attribute values
-.mtk11 {
+/* .mtk11 {
   color: #96e072 !important;
 } */
 
 /* Bracket colors */
 .monaco-editor .bracket-highlighting-0 {
   color: #0890ff !important;
-  text-shadow: #6dbdffdd 0 0 5px !important;
+  text-shadow: 0 0 5px #6dbdffdd !important;
 }
 .monaco-editor .bracket-highlighting-1 {
   color: #ffb223 !important;
-  text-shadow: #ffec3d 0 0 5px !important;
+  text-shadow: 0 0 5px #ffec3d !important;
 }
 .monaco-editor .bracket-highlighting-2 {
   color: #ffff00 !important;
-  text-shadow: #efff64dd 0 0 5px !important;
+  text-shadow: 0 0 5px #efff64dd !important;
 }
 .monaco-editor .bracket-highlighting-3 {
   color: #7ffdff !important;
-  text-shadow: 0 0 5px !important;
+  text-shadow: 0 0 5px currentColor !important;
 }
 .monaco-editor .bracket-highlighting-4 {
   color: #ffc0cb !important;
-  text-shadow: #ffd0d8fb 0 0 5px !important;
+  text-shadow: 0 0 5px #ffd0d8fb !important;
 }
 .monaco-editor .bracket-highlighting-5 {
   color: #0890ff !important;
-  text-shadow: #6dbdffdd 0 0 5px !important;
+  text-shadow: 0 0 5px #6dbdffdd !important;
 }
 .monaco-editor .bracket-highlighting-6 {
   color: #ffb223 !important;
-  text-shadow: #ffec3d 0 0 5px !important;
+  text-shadow: 0 0 5px #ffec3d !important;
 }
 .monaco-editor .bracket-highlighting-7 {
   color: #ffff00 !important;
-  text-shadow: #efff64dd 0 0 5px !important;
+  text-shadow: 0 0 5px #efff64dd !important;
 }
 .monaco-editor .bracket-highlighting-8 {
   color: #7ffdff !important;
-  text-shadow: 0 0 5px !important;
+  text-shadow: 0 0 5px currentColor !important;
 }
 .monaco-editor .bracket-highlighting-9 {
   color: #ffc0cb !important;
-  text-shadow: #ffd0d8fb 0 0 5px !important;
+  text-shadow: 0 0 5px #ffd0d8fb !important;
 }
 
 /* Pretty TypeScript Errors: Allow copying */
@@ -103,12 +96,11 @@ a.codicon-arrow-right {
 /* Tooltip box style */
 .monaco-editor-hover,
 .monaco-hover {
-  font-family: "Comic Sans MS";
+  font-family: "Comic Sans MS" !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.4) !important;
   /* padding: 6px !important; */
   /* background: linear-gradient(to bottom, #458a7f94 0%, #447a9967 100%) !important; */
   border: 2px solid rgb(108, 166, 190) !important;
-  border-radius: 12px !important;
 }
 /* Tooltip box transparent effect */
 .monaco-editor .monaco-hover {
@@ -117,44 +109,31 @@ a.codicon-arrow-right {
 }
 
 /* Command Palette */
-/* .quick-input-widget {
-  font-family: "Comic Sans MS";
-  font-size: 15px;
-  transform: translateY(-50%) !important;
+.quick-input-widget {
+  /* font-family: "Comic Sans MS" !important; */
+  font-family: "FiraCode Nerd Font Mono" !important;
+  font-size: 15px !important;
   top: 50% !important;
+  transform: translateY(-50%) !important;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.45) !important;
-  padding: 16px 16px 25px 16px !important;
-  background-image: linear-gradient(to bottom, #252631 0%, #232b29 100%) !important;
+  /* padding: 16px 16px 25px 16px !important; */
+  /* background-image: linear-gradient(to bottom, #252631 0%, #232b29 100%) !important; */
   border: 2px solid skyblue !important;
-  backdrop-filter: blur(3px) !important;
-  border-radius: 18px !important;
-} */
-
+  /* backdrop-filter: blur(3px) !important; */
+}
 /* Command palette text input */
-/* .quick-input-filter .monaco-inputbox {
+.quick-input-filter .monaco-inputbox {
   padding: 6px 8px 7px 8px !important;
   border: none !important;
-  background-color: #2f4447 !important;
+  background-color: #333f41 !important;
   font-size: 15px !important;
   margin-bottom: 16px !important;
   border-radius: 40px !important;
-} */
-
+}
 /* Command palette's input box placeholder. */
 .monaco-inputbox input::placeholder {
   color: rgba(255, 255, 255, 0.3) !important;
 }
-
-/* Command palette making center align */
-/* #command-blur {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.15);
-  top: 0;
-  left: 0;
-  backdrop-filter: blur(8px);
-} */
 
 /* Icon of top left corner of window */
 /* .window-appicon {
@@ -174,7 +153,6 @@ a.codicon-arrow-right {
   width: 60% !important;
 } */
 
-
 /* Remove original error message and use `Pretty Typescript Errors` extension message only  */
 /* Allow copying */
 .codicon-none {
@@ -185,7 +163,6 @@ a.codicon-arrow-right {
 div.monaco-hover-content:has(.codicon-none) > .hover-row:first-child {
   display: none !important;
 }
-div.monaco-hover-content:has([style="color:#f96363;"])
-  > .hover-row:first-child {
+div.monaco-hover-content:has([style="color:#f96363;"]) > .hover-row:first-child {
   display: none !important;
 }
